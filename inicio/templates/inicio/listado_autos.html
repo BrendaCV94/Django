@@ -12,8 +12,16 @@
         <a href={% url "listado_autos"%}>Autos</a> 
     </nav>
 
-<h1>Hola Soy la vista de inicio actual</h1>
-    
+    <h1>Listado de Autos</h1>
+
+    <ul>
+    {% for auto in listado_de_autos %}
+        <li>
+            {{auto}}
+        </li>
+
+    {% endfor %}
+    </ul>
+
 </body>
 </html>
-
